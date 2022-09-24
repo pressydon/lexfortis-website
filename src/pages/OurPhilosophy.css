@@ -1,0 +1,62 @@
+
+.our-philosophy-container{
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+.firm-objective{
+    margin-left: 30px;
+    display: flex;
+ 
+  
+    
+}
+.firm-objective h4{
+    margin-left:30px ;
+    background: goldenrod;
+    width: 180px;
+    padding: 10px;
+    box-shadow: black 0px 5px 10px;
+}
+.each-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: -5px;
+
+}
+.each-item i{
+    color:white ;
+    background: goldenrod;
+    border-radius: 50%;
+    border: 2px solid goldenrod;
+    margin-right: 20px;
+    margin-top: -10px;
+    margin-left: 10px;
+}
+.each-item p{
+    font-size: 15px;
+}
+
+@media screen and (max-width:960px) {
+    .firm-objective{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        width:100%;
+        transform: translate(-50%, -10%);
+        max-width: 90%;
+        margin-left: 10px;
+        
+      
+        
+        
+    } 
+}

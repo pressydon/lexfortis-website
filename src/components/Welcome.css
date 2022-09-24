@@ -1,0 +1,15 @@
+.welcome-container{
+    width: 70%;
+    text-align: center;
+    margin: 70px auto;
+    
+}
+.welcome-container h1{
+    font-weight: 800;
+}
+.welcome-container p{
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: 1.5px;
+    font-size: 20px;
+}

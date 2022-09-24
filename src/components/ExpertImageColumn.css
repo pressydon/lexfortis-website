@@ -1,0 +1,23 @@
+.Expert-image-container{
+    width: 100%;
+    position: relative;
+}
+.Expert-image-container img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.Expert-image-container h1{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width:100%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(27, 20, 2);
+    
+}

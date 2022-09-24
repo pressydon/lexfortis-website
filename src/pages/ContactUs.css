@@ -1,0 +1,129 @@
+
+
+.contactus-container{
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+.contact-form-container{
+    display: flex;
+    justify-content: space-around;
+    background: rgba(49, 41, 41, 0.548);
+    padding: 20px;
+}
+
+.contact-form-left{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:10px;
+    margin-left: 20px;
+    justify-content: space-around;
+}
+.contact-form-right h2{
+    font-size: 35px;
+    font-weight: 1000;
+    color: goldenrod;
+}
+.each-card{
+    width: 200px;
+    height: 200px;
+    background: goldenrod;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 10px;
+}
+.each-card i{
+    font-size: 35px;
+    color: rgb(94, 76, 31);
+    padding-bottom: 10px;
+}
+.each-card p{
+    font-size: 13px;
+    font-weight: 700;
+    /* width: 90%; */
+}
+.each-card a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+.contact-form-right{
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+    width: 50%;
+    
+    /* justify-content: center; */
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+}
+.inputs label{
+    color: rgb(246, 244, 241);
+    font-weight: 700;
+}
+.inputs input,
+.inputs textarea{
+    padding: 10px;
+   border-radius: 10px;
+   outline: none;
+   border: none;
+   width: 100%;
+    
+}
+
+form .btn{
+    padding: 10px 20px;
+    border: 1px solid goldenrod;
+    border-radius: 10px;
+   margin: 10px 50px;
+    background: goldenrod;
+    color: white;
+    cursor: pointer;
+}
+form .btn:hover{
+    box-shadow: black 2px 2px 5px;
+    color: white;
+}
+
+
+.social-logos i{
+  font-size: 22px;
+    object-fit: contain;
+    transition: all 250ms ease-in-out;
+}
+
+.social-logos i:hover{
+    font-size: 25px;
+    color: black;
+}
+
+
+@media screen and (max-width:960px) {
+    .contact-form-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-form-left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact-form-right{
+        width: 90%;
+    }
+}
